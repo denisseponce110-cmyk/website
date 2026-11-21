@@ -123,6 +123,33 @@ h2.section-title {
   margin-bottom: 1.2rem;
 }
 
+.headshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  gap: 1.5rem;
+}
+
+.headshot-card {
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+}
+
+.headshot-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.headshot-card:hover img {
+  transform: scale(1.02);
+  filter: brightness(1.05);
+}
+
 table.credits {
   width: 100%;
   border-collapse: collapse;

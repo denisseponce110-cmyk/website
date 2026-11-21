@@ -7,6 +7,7 @@ export default function NavBar() {
         <NavLink className="brand" to="/">DENISSE PONCE</NavLink>
         <ul>
           <li><NavLink to="/" end>Home</NavLink></li>
+          <li><NavLink to="/headshots">Headshots</NavLink></li>
           <li><NavLink to="/acting">Acting</NavLink></li>
           <li><NavLink to="/dancing">Dancing</NavLink></li>
         </ul>
