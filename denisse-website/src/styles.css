@@ -149,6 +149,7 @@ table.credits td.detail {
 .skills-text {
   color: var(--muted);
   font-size: 0.95rem;
+  white-space: pre-line;
 }
 
 .page-intro {
