@@ -24,10 +24,43 @@ export const education = [
   { title: 'Acting for Theatre, Film & Television Diploma', role: '', detail: 'Toronto Film School' },
 ];
 
-export const skills = `Acting 1, Tanya Rintoul; Camera Acting 1, Ingrid Hart; Auditioning for Camera, Christopher Jacot;
-Improvisation 4, The Second City; Camera Acting 2, Julia Paton; Movement 3 Clown & Physical Theatre,
-Andy Massingham; Acting 3, Catherine McNally; Voice 2, Peter Van Wart; Acting 4: Improvisation &
-Musical Improv, Jack Mosshammer; Voiceover, Matthew McDonald; Owning the Room, Intensive at
-Tarragon Theatre; Contemporary Dance (Intermediate), The Underground Dance Centre; Reggaeton
-Dance (Intermediate), The Underground Dance Centre; Intermediate Ballet, The Fifth Dance; Flexibility,
-Intermediate; Singing Skills (Soprano, beginner); Spanish Language, Native; English Language, fluent.`;
+export const skillCategories = [
+  {
+    category: 'Acting',
+    items: [
+      { name: 'Acting 1', detail: 'Tanya Rintoul' },
+      { name: 'Acting 3', detail: 'Catherine McNally' },
+      { name: 'Acting 4: Improvisation & Musical Improv', detail: 'Jack Mosshammer' },
+      { name: 'Camera Acting 1', detail: 'Ingrid Hart' },
+      { name: 'Camera Acting 2', detail: 'Julia Paton' },
+      { name: 'Auditioning for Camera', detail: 'Christopher Jacot' },
+      { name: 'Improvisation 4', detail: 'The Second City' },
+      { name: 'Owning the Room (Intensive)', detail: 'Tarragon Theatre' },
+    ],
+  },
+  {
+    category: 'Voice & Movement',
+    items: [
+      { name: 'Voice 2', detail: 'Peter Van Wart' },
+      { name: 'Voiceover', detail: 'Matthew McDonald' },
+      { name: 'Movement 3: Clown & Physical Theatre', detail: 'Andy Massingham' },
+      { name: 'Singing (Soprano)', detail: 'Beginner' },
+    ],
+  },
+  {
+    category: 'Dance',
+    items: [
+      { name: 'Contemporary Dance', detail: 'Intermediate — The Underground Dance Centre' },
+      { name: 'Reggaeton Dance', detail: 'Intermediate — The Underground Dance Centre' },
+      { name: 'Ballet', detail: 'Intermediate — The Fifth Dance' },
+      { name: 'Flexibility', detail: 'Intermediate' },
+    ],
+  },
+  {
+    category: 'Languages',
+    items: [
+      { name: 'Spanish', detail: 'Native' },
+      { name: 'English', detail: 'Fluent' },
+    ],
+  },
+];

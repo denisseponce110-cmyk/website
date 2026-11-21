@@ -1,5 +1,6 @@
 import CreditsTable from '../components/CreditsTable.jsx';
-import { theatre, filmTv, commercials, education, skills } from '../data/resume.js';
+import SkillsGrid from '../components/SkillsGrid.jsx';
+import { theatre, filmTv, commercials, education, skillCategories } from '../data/resume.js';
 import headshot from '../assets/headshot.jpg';
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
 
       <section>
         <h2 className="section-title">Special Skills &amp; Training</h2>
-        <p className="skills-text">{skills}</p>
+        <SkillsGrid categories={skillCategories} />
       </section>
     </>
   );

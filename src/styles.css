@@ -146,10 +146,45 @@ table.credits td.detail {
   width: 36%;
 }
 
-.skills-text {
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.8rem;
+}
+
+.skills-group h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  margin: 0 0 0.7rem;
+}
+
+.skills-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-group li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+.skills-group li:last-child {
+  border-bottom: none;
+}
+
+.skill-name {
+  color: var(--text);
+}
+
+.skill-detail {
   color: var(--muted);
-  font-size: 0.95rem;
-  white-space: pre-line;
+  font-size: 0.85rem;
 }
 
 .page-intro {
